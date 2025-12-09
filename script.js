@@ -31,6 +31,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Modal Logic
+    const modal = document.getElementById('project-modal');
+    const closeModal = document.querySelector('.close-modal');
+
+    // Close modal
+    if (closeModal) {
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300); // Wait for transition
+        });
+    }
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+    });
+
+    // Open Modal (This part is actually handled by the links going to project-details.html now, 
+    // but if we keep the modal for quick view, we need this)
+    // However, the current design uses separate pages. 
+    // The modal seems to be a leftover artifact or for a "Quick View".
+    // Let's ensure it stays hidden unless explicitly called.
+
     // Project Filtering
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');

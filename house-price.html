@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Predictor</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1c1c1e;
+            --accent-color: #2997ff;
+            --secondary-text: #86868b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--secondary-text);
+            margin-bottom: 40px;
+        }
+
+        .control-group {
+            margin-bottom: 30px;
+        }
+
+        .label-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .value-display {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            background: #e5e5e5;
+            height: 6px;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        .result-card {
+            background: #f5f5f7;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-text);
+            margin-bottom: 10px;
+        }
+
+        .price-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .equation {
+            margin-top: 20px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.8rem;
+            color: var(--secondary-text);
+            background: rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>House Price Predictor</h1>
+        <p class="subtitle">Adjust the sliders to see the estimated market value.</p>
+
+        <div class="control-group">
+            <div class="label-row">
+                <label>Square Footage</label>
+                <span class="value-display" id="area-val">2000 sq ft</span>
+            </div>
+            <input type="range" id="area" min="500" max="5000" step="50" value="2000">
+        </div>
+
+        <div class="control-group">
+            <div class="label-row">
+                <label>Bedrooms</label>
+                <span class="value-display" id="bed-val">3</span>
+            </div>
+            <input type="range" id="bedrooms" min="1" max="6" step="1" value="3">
+        </div>
+
+        <div class="control-group">
+            <div class="label-row">
+                <label>Bathrooms</label>
+                <span class="value-display" id="bath-val">2</span>
+            </div>
+            <input type="range" id="bathrooms" min="1" max="5" step="0.5" value="2">
+        </div>
+
+        <div class="control-group">
+            <div class="label-row">
+                <label>House Age (Years)</label>
+                <span class="value-display" id="age-val">10 years</span>
+            </div>
+            <input type="range" id="age" min="0" max="100" step="1" value="10">
+        </div>
+
+        <div class="result-card">
+            <div class="price-label">Estimated Price</div>
+            <h2 class="price-value" id="price">$450,000</h2>
+            <div class="equation">
+                Price = Base + (Area × $200) + (Bed × $15k) + (Bath × $10k) - (Age × $2k)
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Model Weights (Simplified for Demo)
+        const BASE_PRICE = 50000;
+        const WEIGHTS = {
+            area: 200,      // $200 per sq ft
+            bedrooms: 15000, // $15k per bedroom
+            bathrooms: 10000,// $10k per bathroom
+            age: -2000      // -$2k per year of age
+        };
+
+        const inputs = {
+            area: document.getElementById('area'),
+            bedrooms: document.getElementById('bedrooms'),
+            bathrooms: document.getElementById('bathrooms'),
+            age: document.getElementById('age')
+        };
+
+        const displays = {
+            area: document.getElementById('area-val'),
+            bedrooms: document.getElementById('bed-val'),
+            bathrooms: document.getElementById('bath-val'),
+            age: document.getElementById('age-val'),
+            price: document.getElementById('price')
+        };
+
+        function updatePrediction() {
+            // Get Values
+            const area = parseInt(inputs.area.value);
+            const beds = parseInt(inputs.bedrooms.value);
+            const baths = parseFloat(inputs.bathrooms.value);
+            const age = parseInt(inputs.age.value);
+
+            // Update Displays
+            displays.area.innerText = `${area.toLocaleString()} sq ft`;
+            displays.bedrooms.innerText = beds;
+            displays.bathrooms.innerText = baths;
+            displays.age.innerText = `${age} years`;
+
+            // Calculate Price
+            let price = BASE_PRICE +
+                (area * WEIGHTS.area) +
+                (beds * WEIGHTS.bedrooms) +
+                (baths * WEIGHTS.bathrooms) +
+                (age * WEIGHTS.age);
+
+            // Ensure price doesn't go below realistic minimum
+            if (price < 50000) price = 50000;
+
+            // Format Price
+            displays.price.innerText = '$' + price.toLocaleString();
+        }
+
+        // Add Event Listeners
+        Object.values(inputs).forEach(input => {
+            input.addEventListener('input', updatePrediction);
+        });
+
+        // Initial Calculation
+        updatePrediction();
+    </script>
+</body>
+
+</html>
