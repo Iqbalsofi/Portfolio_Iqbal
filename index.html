@@ -17,473 +17,210 @@
 
 <body>
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Data<span class="accent">.Portfolio</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact" class="btn-primary small">Contact Me</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        <a href="#" class="logo">Iqbal Sofi</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact" class="btn-primary small">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
         <section id="hero" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <p class="hero-tagline">Data Analyst & MS Candidate</p>
-                    <h1 class="hero-title">Iqbal Maqbool Sofi</h1>
-                    <p class="hero-subtitle">
-                        Crafting strategic business insights through data science, machine learning, and advanced
-                        analytics.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">View Work</a>
-                        <a href="#contact" class="btn-secondary">Get in Touch <span class="arrow">→</span></a>
-                    </div>
+            <div class="container hero-content">
+                <p class="hero-tagline">Data Science & Engineering</p>
+                <h1 class="hero-title">Crafting Intelligence <br> from Complexity.</h1>
+                <p class="hero-subtitle">
+                    I transform raw data into strategic business insights using advanced machine learning and scalable
+                    engineering.
+                    <br><span style="color: #2997ff; font-weight: 500;">Ex-Accenture & DXC.</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <div class="mouse"></div>
+        </section>
+
+        <section id="about" class="section about-section" style="padding-top: 50px;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2 class="section-title">About Me</h2>
+                    <p style="font-size: 1.15rem; color: #a1a1aa; line-height: 1.8; margin-bottom: 30px;">
+                        I am a Data Scientist driven by the art of problem-solving. Currently pursuing my <strong>M.S.
+                            in Data Science</strong> at Rowan University, I bring over <strong>3 years of enterprise
+                            experience</strong> building high-performance data solutions for global clients like
+                        Accenture and DXC Technologies.
+                    </p>
+                    <p style="font-size: 1.15rem; color: #a1a1aa; line-height: 1.8;">
+                        I don't just run models; I architect end-to-end systems—from robust ETL pipelines to intuitive
+                        executive dashboards—that deliver measurable impact.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section id="projects" class="section projects-section">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title">Selected Works</h2>
 
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="data-eng">Data Eng & DB</button>
-                    <button class="filter-btn" data-filter="ai-ml">AI / Deep Learning</button>
-                    <button class="filter-btn" data-filter="web-brand">Web & Branding</button>
+                    <button class="filter-btn" data-filter="data-eng">Data Engineering</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+                    <button class="filter-btn" data-filter="web-brand">Web & Interactive</button>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Project 7: House Price Predictor -->
+                    <!-- NEW: DocuMind (GenAI) -->
                     <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">
-                            <div class="project-icon">🏡</div>
-                        </div>
+                        <div class="project-image">🧠</div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>House Price Predictor</h3>
+                            <h3>DocuMind Enterprise RAG</h3>
+                            <p class="project-desc">Internal GenAI search engine allowing employees to chat with PDF
+                                contracts securely.</p>
+                            <div class="project-highlights">
+                                <h4>Tech Stack</h4>
+                                <ul>
+                                    <li>LangChain & OpenAI</li>
+                                    <li>Pinecone Vector DB</li>
+                                    <li>RAG Architecture</li>
+                                </ul>
                             </div>
-                            <p class="project-desc">
-                                Interactive client-side regression demo. Users adjust features to see instant price
-                                predictions.
+                            <a href="project-details.html?id=documind" class="btn-link">View Architecture &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- NEW: FraudGuard (Real-time) -->
+                    <div class="project-card" data-category="data-eng">
+                        <div class="project-image">🛡️</div>
+                        <div class="project-content">
+                            <h3>FraudGuard Real-Time</h3>
+                            <p class="project-desc">Sub-200ms fraud detection system processing 5k+ transactions/sec.
                             </p>
                             <div class="project-highlights">
-                                <h4>Key Highlights</h4>
+                                <h4>Tech Stack</h4>
+                                <ul>
+                                    <li>Apache Kafka & Spark</li>
+                                    <li>Redis Feature Store</li>
+                                    <li>Anomaly Detection</li>
+                                </ul>
+                            </div>
+                            <a href="project-details.html?id=fraudguard" class="btn-link">View Architecture &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 1: House Price Predictor -->
+                    <div class="project-card" data-category="ai-ml">
+                        <div class="project-image">🏡</div>
+                        <div class="project-content">
+                            <h3>House Price Estimator</h3>
+                            <p class="project-desc">Interactive client-side ML regression demo allowing real-time price
+                                prediction adjustments.</p>
+                            <div class="project-highlights">
+                                <h4>Tech Stack</h4>
                                 <ul>
                                     <li>Client-Side ML Inference</li>
-                                    <li>Interactive Feature Sliders</li>
-                                    <li>Regression Model Visualization</li>
+                                    <li>Interactive Visualization</li>
+                                    <li>Real-time Regression</li>
                                 </ul>
                             </div>
-                            <div class="project-links">
-                                <a href="project-details.html?id=house-price" class="btn-link">View Code / Demo <span
-                                        class="arrow">→</span></a>
-                            </div>
+                            <a href="project-details.html?id=house-price" class="btn-link">View Demo &rarr;</a>
                         </div>
                     </div>
 
-                    <!-- Project 8: K-Means Playground -->
+                    <!-- Project 2: K-Means -->
                     <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">
-                            <div class="project-icon">🎨</div>
-                        </div>
+                        <div class="project-image">🎨</div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>K-Means Clustering</h3>
-                            </div>
-                            <p class="project-desc">
-                                Fully interactive visualization of the K-Means algorithm. Step through iterations to see
-                                convergence.
-                            </p>
+                            <h3>K-Means Playground</h3>
+                            <p class="project-desc">Visualizing the K-Means clustering algorithm step-by-step in the
+                                browser.</p>
                             <div class="project-highlights">
-                                <h4>Key Highlights</h4>
+                                <h4>Tech Stack</h4>
                                 <ul>
-                                    <li>Visual Algorithm Step-Through</li>
-                                    <li>Interactive Data Point Creation</li>
-                                    <li>Real-time Clustering Logic</li>
+                                    <li>Algorithm Visualization</li>
+                                    <li>Interactive Clustering</li>
+                                    <li>D3.js / Canvas</li>
                                 </ul>
                             </div>
-                            <div class="project-links">
-                                <a href="project-details.html?id=kmeans" class="btn-link">View Code / Demo <span
-                                        class="arrow">→</span></a>
-                            </div>
+                            <a href="project-details.html?id=kmeans" class="btn-link">View Demo &rarr;</a>
                         </div>
                     </div>
 
-                    <!-- Project 1: Smart Home IoT -->
+                    <!-- Project 3: Smart Home IoT -->
                     <div class="project-card" data-category="data-eng">
-                        <div class="project-image">
-                            <div class="project-icon">🏠</div>
-                        </div>
+                        <div class="project-image">🏠</div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>Smart Home IoT Dual-Database</h3>
-                            </div>
-                            <p class="project-desc">
-                                A robust data engineering solution for high-velocity IoT sensor analytics, designed to
-                                handle real-time streams.
-                            </p>
+                            <h3>IoT Dual-Database Arch</h3>
+                            <p class="project-desc">High-velocity streaming architecture for smart home sensor data.</p>
                             <div class="project-highlights">
-                                <h4>Key Highlights</h4>
+                                <h4>Tech Stack</h4>
                                 <ul>
-                                    <li>Dual-DB Architecture (InfluxDB + MongoDB)</li>
-                                    <li>Real-time Python Ingestion Pipelines</li>
-                                    <li>Dockerized Microservices Deployment</li>
+                                    <li>InfluxDB + MongoDB</li>
+                                    <li>Dockerized Pipelines</li>
+                                    <li>Real-time Ingestion</li>
                                 </ul>
                             </div>
-                            <div class="project-links">
-                                <a href="project-details.html?id=iot" class="btn-link">View Code / Demo <span
-                                        class="arrow">→</span></a>
-                            </div>
+                            <a href="#" class="btn-link">View Details &rarr;</a>
                         </div>
                     </div>
 
-                    <!-- Project 2: ViT Analysis -->
+                    <!-- Project 4: Vision Transformer -->
                     <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">
-                            <div class="project-icon">👁️</div>
-                        </div>
+                        <div class="project-image">👁️</div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>Vision Transformer (ViT) Analysis</h3>
-                            </div>
-                            <p class="project-desc">
-                                An in-depth research implementation fine-tuning Vision Transformers for high-accuracy
-                                image classification.
-                            </p>
+                            <h3>ViT Image Classifier</h3>
+                            <p class="project-desc">Fine-tuning Vision Transformers on ImageNet100 achieving 85%
+                                accuracy.</p>
                             <div class="project-highlights">
-                                <h4>Key Highlights</h4>
+                                <h4>Tech Stack</h4>
                                 <ul>
-                                    <li>92% Top-1 Accuracy on ImageNet-100</li>
-                                    <li>Multi-GPU Training on Tesla Cluster</li>
-                                    <li>Attention Map Visualization</li>
+                                    <li>PyTorch & Transformers</li>
+                                    <li>HPC Cluster Training</li>
+                                    <li>Data Augmentation</li>
                                 </ul>
                             </div>
-                            <div class="project-links">
-                                <a href="project-details.html?id=vit" class="btn-link">View Code / Demo <span
-                                        class="arrow">→</span></a>
-                            </div>
+                            <a href="#" class="btn-link">View Details &rarr;</a>
                         </div>
                     </div>
 
-                    <!-- Project 3: Smart Device Rec Sys -->
-                    <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">
-                            <div class="project-icon">🤖</div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Smart Device Recommendation</h3>
-                            </div>
-                            <p class="project-desc">
-                                Machine learning engine that recommends IoT devices to users based on usage patterns and
-                                preferences.
-                            </p>
-                            <div class="project-highlights">
-                                <h4>Key Highlights</h4>
-                                <ul>
-                                    <li>End-to-End Scikit-learn Pipeline</li>
-                                    <li>95% Precision in Device Matching</li>
-                                    <li>Optimized for Low-Latency Inference</li>
-                                </ul>
-                            </div>
-                            <div class="project-links">
-                                <a href="project-details.html?id=iot" class="btn-link">View Code / Demo <span
-                                        class="arrow">→</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: ShadowTech Brand -->
+                    <!-- Project 5: ShadowTech -->
                     <div class="project-card" data-category="web-brand">
-                        <div class="project-image">
-                            <div class="project-icon">🚀</div>
-                        </div>
+                        <div class="project-image">🚀</div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>ShadowTech Brand</h3>
-                            </div>
-                            <p class="project-desc">
-                                A futuristic, AI-driven tech brand concept featuring generative art and a
-                                high-performance website.
-                            </p>
+                            <h3>ShadowTech Branding</h3>
+                            <p class="project-desc">Futuristic brand concept with generative AI art and high-performance
+                                web design.</p>
                             <div class="project-highlights">
-                                <h4>Key Highlights</h4>
+                                <h4>Tech Stack</h4>
                                 <ul>
-                                    <li>AI-Generated Visual Identity (Stable Diffusion)</li>
-                                    <li>Responsive "Cyber-Minimalist" Design</li>
-                                    <li>High Social Media Engagement Strategy</li>
+                                    <li>Stable Diffusion Assets</li>
+                                    <li>Responsive Grid Design</li>
+                                    <li>Brand Identity</li>
                                 </ul>
                             </div>
-                            <div class="project-links">
-                                <a href="project-details.html?id=shadowtech" class="btn-link">View Code / Demo <span
-                                        class="arrow">→</span></a>
-                            </div>
+                            <a href="project-details.html?id=shadowtech" class="btn-link">View Demo &rarr;</a>
                         </div>
                     </div>
 
-                    <!-- Project 5: Laundry DB -->
+                    <!-- Project 6: Laundry DB -->
                     <div class="project-card" data-category="data-eng">
-                        <div class="project-image">
-                            <div class="project-icon">🧺</div>
-                        </div>
+                        <div class="project-image">🧺</div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>Laundry Management System</h3>
-                            </div>
-                            <p class="project-desc">
-                                Normalized relational database design for a laundry service, ensuring data integrity and
-                                efficient querying.
-                            </p>
+                            <h3>Laundry System DB</h3>
+                            <p class="project-desc">Complex normalized relational database design for inventory
+                                management.</p>
                             <div class="project-highlights">
-                                <h4>Key Highlights</h4>
+                                <h4>Tech Stack</h4>
                                 <ul>
-                                    <li>3NF Normalized Schema Design</li>
-                                    <li>Complex SQL Stored Procedures</li>
-                                    <li>Optimized Indexing Strategies</li>
+                                    <li>3NF SQL Schema</li>
+                                    <li>Stored Procedures</li>
+                                    <li>Query Optimization</li>
                                 </ul>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="btn-link">View Code / Demo <span class="arrow">→</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6: AutoMind AI -->
-                    <div class="project-card" data-category="web-brand">
-                        <div class="project-image">
-                            <div class="project-icon">🚗</div>
-                        </div>
-                        <h3>AutoMind AI Concept</h3>
-                    </div>
-                    <p class="project-desc">
-                        AI agent concept designed to assist mechanics with symptom-based diagnostics using LLM
-                        reasoning.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Highlights</h4>
-                        <ul>
-                            <li>LLM-Based Diagnostic Logic</li>
-                            <li>IoT Sensor Integration Concept</li>
-                            <li>Intuitive Mechanic-First UX</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn-link">View Code / Demo <span class="arrow">→</span></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="lead">
-                            I am a Data Analyst with a strong foundation in <strong>SQL, Python, Excel, and Power
-                                BI</strong>.
-                            Skilled in cleaning, analyzing, and visualizing data to generate insights and support
-                            data-driven decision-making.
-                        </p>
-                        <p>
-                            Currently pursuing my <strong>M.S. in Data Science at Rowan University</strong>, I have over
-                            2.5 years of industry experience
-                            working with global clients at Accenture and DXC Technologies. I am passionate about
-                            collaborating in fast-paced environments
-                            I am a data scientist with a passion for uncovering hidden patterns in complex datasets.
-                        </p>
-                        <p>
-                            Currently pursuing my <strong>Master's in Data Science</strong> at Rowan University, I bring
-                            over
-                            2.5 years of professional experience from <strong>Accenture</strong> and <strong>DXC
-                                Technologies</strong>.
-                            My expertise lies in building scalable data pipelines, designing intuitive dashboards, and
-                            deploying machine learning models that drive real business value.
-                        </p>
-                        <p>
-                            I don't just analyze data; I tell stories with it. Whether it's optimizing ETL workflows or
-                            creating generative AI art, I am driven by curiosity and a relentless pursuit of excellence.
-                        </p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Exp.</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Certifications</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section (New) -->
-        <section class="section" style="padding-top: 0;">
-            <div class="container">
-                <h2 class="section-title" style="font-size: 2rem; margin-bottom: 40px;">Certifications</h2>
-                <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                    <div class="skill-category" style="text-align: center;">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">☁️</div>
-                        <h3>AWS Certified</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Solutions Architect Associate</p>
-                    </div>
-                    <div class="skill-category" style="text-align: center;">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">📊</div>
-                        <h3>Google Data</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Professional Data Engineer</p>
-                    </div>
-                    <div class="skill-category" style="text-align: center;">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🧠</div>
-                        <h3>DeepLearning.AI</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem;">TensorFlow Developer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section skills-section">
-            <div class="container">
-                <h2 class="section-title">Technical Proficiency</h2>
-                <div class="skills-grid">
-                    <!-- Category 1: Languages & Core -->
-                    <div class="skill-category">
-                        <h3>Languages & Core</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Python (Pandas, NumPy)</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>SQL (T-SQL, PL/SQL)</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>C# .NET</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-tags-cloud" style="margin-top: 20px;">
-                            <span>JavaScript</span>
-                            <span>HTML5/CSS3</span>
-                            <span>Shell Scripting</span>
-                        </div>
-                    </div>
-
-                    <!-- Category 2: Data Engineering & DBs -->
-                    <div class="skill-category">
-                        <h3>Data Engineering</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>ETL Pipelines</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Database Design (ERD)</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-tags-cloud" style="margin-top: 20px;">
-                            <span>InfluxDB</span>
-                            <span>MongoDB</span>
-                            <span>SQL Server</span>
-                            <span>PostgreSQL</span>
-                            <span>Docker</span>
-                            <span>Adobe Experience Platform (AEP)</span>
-                        </div>
-                    </div>
-
-                    <!-- Category 3: AI & Machine Learning -->
-                    <div class="skill-category">
-                        <h3>AI & Machine Learning</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Scikit-learn</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>PyTorch / Deep Learning</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-tags-cloud" style="margin-top: 20px;">
-                            <span>Computer Vision</span>
-                            <span>Generative AI</span>
-                            <span>Stable Diffusion</span>
-                            <span>TensorFlow</span>
-                            <span>NLP</span>
-                        </div>
-                    </div>
-
-                    <!-- Category 4: Tools & Analytics -->
-                    <div class="skill-category">
-                        <h3>Tools & Analytics</h3>
-                        <div class="skill-tags-cloud">
-                            <span>Power BI</span>
-                            <span>Tableau</span>
-                            <span>Adobe Analytics</span>
-                            <span>Google Analytics</span>
-                            <span>Excel (Advanced)</span>
-                            <span>Postman API</span>
-                            <span>Git / GitHub</span>
-                            <span>Adobe Experience Manager (AEM)</span>
-                            <span>Jira</span>
+                            <a href="#" class="btn-link">View Details &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -492,104 +229,152 @@
 
         <section id="experience" class="section experience-section">
             <div class="container">
-                <h2 class="section-title">Work Experience</h2>
+                <h2 class="section-title">Professional Journey</h2>
                 <div class="timeline">
-                    <!-- Experience Item 1 -->
+                    <!-- Accenture -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">Feb 2022 - Aug 2024</div>
                         <div class="timeline-content">
                             <h3>Custom Software Engineering Analyst</h3>
                             <h4>Accenture</h4>
-                            <p class="role-description">
-                                Focused on Adobe Experience Platform (AEP) solutions and digital analytics.
-                            </p>
+                            <p class="role-description">Specialized in Adobe Experience Platform (AEP) implementations
+                                and large-scale data analytics.</p>
                             <ul class="achievements">
-                                <li>Implemented AEP solutions to centralize customer data, enabling personalized
-                                    experiences across digital channels.</li>
-                                <li>Configured Adobe Analytics & Google Analytics tracking frameworks to measure KPIs
-                                    and user journeys.</li>
-                                <li>Designed dashboards that improved decision-making speed for senior leadership by
-                                    <strong>20%</strong>.
-                                </li>
-                                <li>Collaborated with cross-functional teams to ensure data accuracy and governance
-                                    using Adobe Experience Manager (AEM).</li>
+                                <li><strong>Executive Reporting:</strong> Built Power BI dashboards analyzing 500K+
+                                    daily events to drive strategic decisions.</li>
+                                <li><strong>Data Pipelines:</strong> Developed SQL-based ETL workflows integrating Adobe
+                                    & Google Analytics data.</li>
+                                <li><strong>Segmentation:</strong> Performed cohort analysis identifying high-value user
+                                    segments for targeted marketing.</li>
+                                <li><strong>Automation:</strong> Automated KPI reporting, reducing manual effort by 15+
+                                    hours weekly.</li>
                             </ul>
-                            <div class="tech-tags">
-                                <span>Adobe Analytics</span>
-                                <span>Google Analytics</span>
-                                <span>AEP</span>
-                                <span>AEM</span>
-                            </div>
                         </div>
                     </div>
-                    <!-- Experience Item 2 -->
+
+                    <!-- DXC -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-date">Aug 2021 - Feb 2022</div>
                         <div class="timeline-content">
-                            <h3>Associate Software Developer (.NET)</h3>
+                            <h3>Associate Software Developer</h3>
                             <h4>DXC Technologies</h4>
-                            <p class="role-description">
-                                Backend development and API integration.
-                            </p>
+                            <p class="role-description">Backend development for enterprise web applications.</p>
                             <ul class="achievements">
-                                <li>Developed and maintained C# .NET applications with SQL Server backend, ensuring
-                                    efficient data handling.</li>
-                                <li>Utilized Postman to design and test REST APIs, improving integration across
-                                    applications.</li>
-                                <li>Collaborated with team members to deliver software enhancements within agile
-                                    sprints.</li>
+                                <li>Developed C# .NET APIs with robust SQL Server backends.</li>
+                                <li>Optimized stored procedures for faster data retrieval.</li>
+                                <li>Collaborated in Agile sprints with daily standups and code reviews.</li>
                             </ul>
-                            <div class="tech-tags">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>⚡️ Core & Languages</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python (Pandas, NumPy)</span><span>95%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>SQL (Postgres, T-SQL)</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-tags-cloud">
                                 <span>C# .NET</span>
-                                <span>SQL Server</span>
-                                <span>REST APIs</span>
-                                <span>Postman</span>
+                                <span>JavaScript</span>
+                                <span>Bash</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🛠 Data Engineering</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>ETL Pipelines</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Database Design</span><span>85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-tags-cloud">
+                                <span>Docker</span>
+                                <span>MongoDB</span>
+                                <span>InfluxDB</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🤖 AI & Analytics</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Machine Learning</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-tags-cloud">
+                                <span>Scikit-Learn</span>
+                                <span>PyTorch</span>
+                                <span>Computer Vision</span>
+                                <span>Power BI</span>
+                                <span>Tableau</span>
+                                <span>A/B Testing</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="contact" class="section contact-section">
             <div class="container contact-container">
                 <div class="contact-text">
-                    <h2 class="section-title" style="text-align: left; margin-left: 0;">Let's Connect</h2>
-                    <p>
-                        I am currently looking for full-time opportunities in Data Science and Analytics.
-                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                    </p>
+                    <h2>Ready to build something great?</h2>
+                    <p style="margin-bottom: 30px; color: #a1a1aa;">I'm currently open to full-time opportunities in
+                        Data Science and Engineering. Let's discuss how I can contribute to your team.</p>
                     <div class="contact-info">
-                        <div class="contact-item">
-                            <span class="icon">📧</span>
-                            <a href="mailto:iqbalmaqbol@gmail.com">iqbalmaqbol@gmail.com</a>
+                        <div class="contact-item">📧 <a href="mailto:iqbalmaqbol@gmail.com">iqbalmaqbol@gmail.com</a>
                         </div>
-                        <div class="contact-item">
-                            <span class="icon">📱</span>
-                            <span>+1 8562440515</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="icon">🔗</span>
-                            <a href="https://linkedin.com/in/Iqbal-sofi" target="_blank">linkedin.com/in/Iqbal-sofi</a>
-                        </div>
+                        <div class="contact-item">🔗 <a href="https://linkedin.com/in/Iqbal-sofi"
+                                target="_blank">linkedin.com/in/Iqbal-sofi</a></div>
+                        <div class="contact-item">📍 Camden, NJ (Open to Relocate)</div>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
                     <form class="contact-form">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Your Name">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Doe">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Your Email">
+                            <label>Email</label>
+                            <input type="email" placeholder="john@example.com">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="Hi Iqbal..."></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
             </div>

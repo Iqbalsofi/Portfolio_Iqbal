@@ -415,6 +415,35 @@
                 ],
                 liveUrl: 'kmeans.html',
                 repoUrl: 'https://github.com/Iqbalsofi/k-means-playground'
+            },
+            'documind': {
+                title: 'DocuMind Enterprise RAG',
+                category: 'GenAI / LLMs',
+                tags: ['LangChain', 'OpenAI', 'Pinecone', 'FastAPI'],
+                overview: 'An advanced Retrieval-Augmented Generation (RAG) engine designed for enterprise document intelligence. It allows employees to securely chat with thousands of internal PDF contracts and technical manuals with zero "hallucinations".',
+                techDetails: 'Built using LangChain for orchestration and Pinecone for vector storage. It uses a sliding-window chunking strategy to preserve context. The backend is FastAPI, serving a React frontend. Includes a hybrid search (BM25 + Semantic) for higher retrieval accuracy.',
+                features: [
+                    'Hybrid Search (Keyword + Vector)',
+                    'Source Citation with Page Numbers',
+                    'Role-Based Access Control',
+                    'Zero-Hallucination Guardrails'
+                ],
+                demoType: 'architecture',
+                archImage: 'https://cdn.mermaidcdn.io/mermaid-diagram-2024.png' // Placeholder, will implement code view
+            },
+            'fraudguard': {
+                title: 'FraudGuard Real-Time',
+                category: 'Data Engineering',
+                tags: ['Kafka', 'Spark Streaming', 'Redis', 'XGBoost'],
+                overview: 'A high-throughput fraud detection system processing 5,000+ financial transactions per second. It uses an ensemble of Isolation Forests and XGBoost to flag anomalies in real-time (sub-200ms latency).',
+                techDetails: 'Ingests transaction streams via Apache Kafka. Features are computed on-the-fly using Spark Structured Streaming and stored in Redis for low-latency lookup. The model is served via a scalable Python microservice dockerized on Kubernetes.',
+                features: [
+                    '< 200ms End-to-End Latency',
+                    'Real-time Feature Engineering',
+                    'Drift Detection Dashboard',
+                    'Kubernetes Auto-scaling'
+                ],
+                demoType: 'architecture'
             }
         };
 
@@ -466,7 +495,7 @@
             // Embed Live Demo via Iframe
             demoContainer.innerHTML = `
                 <iframe src="${project.liveUrl}" 
-                        style="width: 100%; height: 700px; border: none; border-radius: 8px; background: #fff;">
+                        style="width: 100%; height: 700px; border: none; border-radius: 8px; background: #000;">
                 </iframe>
             `;
             // Remove padding from demo content to let iframe fill it
@@ -555,6 +584,80 @@
                     <p style="font-size: 0.8rem; color: var(--accent-tertiary);">Attention Map Generated successfully.</p>
                 `;
             };
+        } else if (project.demoType === 'architecture') {
+            const terminalContent = `
+                <div style="width: 100%; height: 100%; min-height: 400px; background: #0d1117; border-radius: 8px; padding: 20px; font-family: 'Fira Code', monospace; color: #c9d1d9; overflow: auto; position: relative;">
+                    <div style="border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 15px; color: #8b949e;">
+                        <span style="color: #58a6ff;">root@portfolio</span>:~/projects/${projectId} $ ./show_architecture.sh
+                    </div>
+                    <div id="terminal-output" style="line-height: 1.6; white-space: pre-wrap;"></div>
+                    <div class="cursor" style="display:inline-block; width: 8px; height: 15px; background: #c9d1d9; animation: blink 1s infinite;"></div>
+                </div>
+                <style>
+                    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+                </style>
+            `;
+
+            demoContainer.innerHTML = terminalContent;
+
+            // Typewriter content
+            const linesToType = [
+                { text: "[INFO] Initializing System Architecture Visualization...", color: "#7ee787" },
+                { text: "[INFO] Loading Component Modules... DONE", color: "#7ee787" },
+                { text: "\n", color: "#fff" }, // Spacer
+                {
+                    text: projectId === 'documind' ?
+                        `   [User Query] ──> [FastAPI Backend] ──> [OpenAI Embedding API]
+                          │                         │
+                          ▼                         ▼
+                    [LangChain Agent] ◄── [Pinecone Vector DB]
+                          │
+                          ▼
+                    [GPT-4 Model] ──> [Response + Citations]` :
+                        `   [Trans. Stream] ──> [Kafka Topic] ──> [Spark Streaming]
+                                              │
+                                              ▼
+    [Redis Feature Store] ◄── [Ensemble Model (XGB + ISO)]
+                                              │
+                                              ▼
+                                       [Decision: FRAUD/LEGIT]`, color: "#c9d1d9", isArt: true
+                },
+                { text: "\n", color: "#fff" },
+                { text: "> Component Status:", color: "#d2a8ff" },
+                { text: projectId === 'documind' ? "• Vector Index: ONLINE (1.2M Vectors)" : "• Throughput: 5,240 TPS", color: "#c9d1d9" },
+                { text: projectId === 'documind' ? "• Cache Hit Rate: 84%" : "• P99 Latency: 185ms", color: "#c9d1d9" },
+                { text: projectId === 'documind' ? "• Avg Latency: 850ms" : "• Fraud Captured: 99.8%", color: "#c9d1d9" }
+            ];
+
+            const outputDiv = document.getElementById('terminal-output');
+
+            async function typeLines() {
+                for (let line of linesToType) {
+                    const span = document.createElement('span');
+                    span.style.color = line.color;
+                    if (line.isArt) span.style.fontFamily = 'monospace'; // Ensure alignment
+                    outputDiv.appendChild(span);
+
+                    if (line.isArt) {
+                        // Type ASCII art faster
+                        span.innerHTML = line.text;
+                        await new Promise(r => setTimeout(r, 100));
+                    } else {
+                        // Type text char by char
+                        for (let char of line.text) {
+                            span.textContent += char;
+                            await new Promise(r => setTimeout(r, 15)); // Typing speed
+                        }
+                    }
+                    outputDiv.appendChild(document.createElement('br'));
+                    await new Promise(r => setTimeout(r, 100)); // Line delay
+                }
+                // Hide cursor after typing
+                document.querySelector('.cursor').style.display = 'none';
+            }
+
+            // Start typing after a short delay
+            setTimeout(typeLines, 500);
         } else {
             demoContainer.innerHTML = `
                 <div style="text-align: center; color: var(--text-secondary);">
