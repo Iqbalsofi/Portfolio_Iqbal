@@ -1,429 +1,742 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio | MS Student & Ex-Accenture</title>
-    <meta name="description"
-        content="Portfolio of a Data Science MS student with 3 years of experience at Accenture. Specializing in Machine Learning, Data Visualization, and Business Intelligence.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
-        rel="stylesheet">
+    <meta name="description" content="Iqbal Maqbool Sofi - Data Scientist & ML Engineer | Accenture | Rowan University | Master's in Data Science">
+    <meta name="keywords" content="Data Science, Machine Learning, Analytics, Python, Accenture, Portfolio">
+    <title>Iqbal Maqbool Sofi | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">Iqbal Sofi</a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact" class="btn-primary small">Contact</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">IMS</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                <div style="margin-bottom: 20px;">
-                    <span
-                        style="background: rgba(10, 132, 255, 0.1); color: #0a84ff; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.02em;">
-                        Available for Data Science Roles
-                    </span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    Available for opportunities
                 </div>
-                <h1 class="hero-title">Building Scalable AI <br> & Data Systems.</h1>
-                <p class="hero-subtitle">
-                    Hi, I'm <strong>Iqbal</strong>. I engineer high-performance machine learning solutions and
-                    enterprise data pipelines.
-                    <br><span style="color: #94a3b8; font-size: 1.1rem; margin-top: 8px; display: block;">M.S. Data
-                        Science • Ex-Accenture & DXC</span>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Iqbal Maqbool Sofi</span>
+                </h1>
+                <p class="hero-subtitle">Data Scientist & Machine Learning Engineer</p>
+                <p class="hero-description">
+                    Master's student at Rowan University with 2.5+ years at <strong>Accenture</strong>, 
+                    specializing in building data-driven solutions that process <strong>500K+ daily events</strong> 
+                    and deliver measurable business impact through advanced analytics and machine learning.
                 </p>
-                <div class="hero-buttons">
-                    <a href="Iku_Resume.pdf" target="_blank" class="btn-primary">
-                        <span style="margin-right: 8px;">📄</span> Download Resume
+                
+                <div class="hero-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">AWS</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in touch</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#projects" class="btn-secondary">View Engineering Projects</a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View work</span>
+                    </a>
+                    <a href="https://github.com/iqbalsofi" target="_blank" class="btn btn-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/iqbalsofi" target="_blank" class="btn btn-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
-        </section>
 
-        <section id="about" class="section about-section" style="padding-top: 50px;">
-            <div class="container">
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <h2 class="section-title">About Me</h2>
-                    <p style="font-size: 1.15rem; color: #a1a1aa; line-height: 1.8; margin-bottom: 30px;">
-                        I am a Data Scientist driven by the art of problem-solving. Currently pursuing my <strong>M.S.
-                            in Data Science</strong> at Rowan University, I bring over <strong>3 years of enterprise
-                            experience</strong> building high-performance data solutions for global clients like
-                        Accenture and DXC Technologies.
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="terminal-title">data_scientist.py</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="comment"># Building ML solutions that drive business value</span>
+
+<span class="keyword">class</span> <span class="class">DataScientist</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Iqbal Maqbool Sofi"</span>
+        <span class="param">self</span>.role = <span class="string">"Data Scientist"</span>
+        <span class="param">self</span>.company = <span class="string">"Accenture"</span>
+        <span class="param">self</span>.education = <span class="string">"MS Data Science"</span>
+        <span class="param">self</span>.location = <span class="string">"Glassboro, NJ"</span>
+    
+    <span class="keyword">def</span> <span class="function">get_skills</span>(<span class="param">self</span>):
+        <span class="keyword">return</span> {
+            <span class="string">'languages'</span>: [<span class="string">'Python'</span>, <span class="string">'SQL'</span>, <span class="string">'R'</span>],
+            <span class="string">'ml_frameworks'</span>: [<span class="string">'PyTorch'</span>, <span class="string">'TensorFlow'</span>],
+            <span class="string">'analytics'</span>: [<span class="string">'Power BI'</span>, <span class="string">'Tableau'</span>],
+            <span class="string">'cloud'</span>: [<span class="string">'AWS'</span>, <span class="string">'Azure'</span>]
+        }
+    
+    <span class="keyword">def</span> <span class="function">current_focus</span>(<span class="param">self</span>):
+        <span class="keyword">return</span> <span class="string">"Building trustworthy AI systems"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Turning Data Into <span class="gradient-text">Actionable Insights</span></h2>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="lead">
+                        I'm a <strong>Data Scientist</strong> currently pursuing my Master's at <strong>Rowan University</strong>, 
+                        with hands-on experience building enterprise-scale analytics solutions at <strong>Accenture</strong>.
                     </p>
-                    <p style="font-size: 1.15rem; color: #a1a1aa; line-height: 1.8;">
-                        I don't just run models; I architect end-to-end systems—from robust ETL pipelines to intuitive
-                        executive dashboards—that deliver measurable impact.
+                    <p>
+                        At Accenture, I built executive dashboards in <strong>Power BI and Tableau</strong> analyzing 
+                        <strong>500K+ daily customer interactions</strong>, designed SQL-based ETL pipelines integrating 
+                        Adobe Analytics and Google Analytics data, and created automated KPI tracking systems that saved 
+                        <strong>15+ hours weekly</strong>.
                     </p>
+                    <p>
+                        My technical journey spans from building <strong>Vision Transformer models</strong> achieving 85% 
+                        accuracy on ImageNet100, to implementing <strong>VQ-VAE autoencoders</strong> for manufacturing 
+                        defect detection with 92% accuracy. I'm passionate about responsible AI and have conducted research 
+                        in <strong>security and privacy challenges in Cloud and IoT systems</strong>.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">2.5+</div>
+                            <div class="stat-label">Years at Accenture</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">500K+</div>
+                            <div class="stat-label">Daily Events Processed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Hours Saved Weekly</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="projects" class="section projects-section">
-            <div class="container">
-                <h2 class="section-title">Selected Works</h2>
-
-                <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="data-eng">Data Engineering</button>
-                    <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
-                    <button class="filter-btn" data-filter="web-brand">Web & Interactive</button>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- NEW: DocuMind (GenAI) -->
-                    <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">🧠</div>
-                        <div class="project-content">
-                            <h3>DocuMind Enterprise RAG</h3>
-                            <p class="project-desc">Internal GenAI search engine allowing employees to chat with PDF
-                                contracts securely.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>LangChain & OpenAI</li>
-                                    <li>Pinecone Vector DB</li>
-                                    <li>RAG Architecture</li>
-                                </ul>
-                            </div>
-                            <a href="project-details.html?id=documind" class="btn-link">View Architecture &rarr;</a>
+                <div class="about-sidebar">
+                    <div class="info-card">
+                        <h3>
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="info-item">
+                            <strong>Master of Science in Data Science</strong>
+                            <span>Rowan University</span>
+                            <span class="date">Aug 2024 - May 2026</span>
+                            <p>Coursework: Machine Learning, Deep Learning, Statistical Analysis, Data Mining, Big Data Systems</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Bachelor of Technology</strong>
+                            <span>Amity University, India</span>
+                            <span class="date">2017 - 2021</span>
                         </div>
                     </div>
 
-                    <!-- NEW: FraudGuard (Real-time) -->
-                    <div class="project-card" data-category="data-eng">
-                        <div class="project-image">🛡️</div>
-                        <div class="project-content">
-                            <h3>FraudGuard Real-Time</h3>
-                            <p class="project-desc">Sub-200ms fraud detection system processing 5k+ transactions/sec.
-                            </p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>Apache Kafka & Spark</li>
-                                    <li>Redis Feature Store</li>
-                                    <li>Anomaly Detection</li>
-                                </ul>
-                            </div>
-                            <a href="project-details.html?id=fraudguard" class="btn-link">View Architecture &rarr;</a>
-                        </div>
+                    <div class="info-card">
+                        <h3>
+                            <i class="fas fa-certificate"></i>
+                            Certifications
+                        </h3>
+                        <ul class="cert-list">
+                            <li><i class="fas fa-check-circle"></i> Google Data Analytics Professional</li>
+                            <li><i class="fas fa-check-circle"></i> AWS Certified Cloud Practitioner</li>
+                            <li><i class="fas fa-check-circle"></i> Accenture Cloud Platform & SDLC</li>
+                            <li><i class="fas fa-check-circle"></i> NPTEL: Deep Learning, Social Networks, IoT</li>
+                        </ul>
                     </div>
 
-                    <!-- Project 1: House Price Predictor -->
-                    <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">🏡</div>
-                        <div class="project-content">
-                            <h3>House Price Estimator</h3>
-                            <p class="project-desc">Interactive client-side ML regression demo allowing real-time price
-                                prediction adjustments.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>Client-Side ML Inference</li>
-                                    <li>Interactive Visualization</li>
-                                    <li>Real-time Regression</li>
-                                </ul>
-                            </div>
-                            <a href="project-details.html?id=house-price" class="btn-link">View Demo &rarr;</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: K-Means -->
-                    <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">🎨</div>
-                        <div class="project-content">
-                            <h3>K-Means Playground</h3>
-                            <p class="project-desc">Visualizing the K-Means clustering algorithm step-by-step in the
-                                browser.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>Algorithm Visualization</li>
-                                    <li>Interactive Clustering</li>
-                                    <li>D3.js / Canvas</li>
-                                </ul>
-                            </div>
-                            <a href="project-details.html?id=kmeans" class="btn-link">View Demo &rarr;</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Smart Home IoT -->
-                    <div class="project-card" data-category="data-eng">
-                        <div class="project-image">🏠</div>
-                        <div class="project-content">
-                            <h3>IoT Dual-Database Arch</h3>
-                            <p class="project-desc">High-velocity streaming architecture for smart home sensor data.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>InfluxDB + MongoDB</li>
-                                    <li>Dockerized Pipelines</li>
-                                    <li>Real-time Ingestion</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="btn-link">View Details &rarr;</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: Vision Transformer -->
-                    <div class="project-card" data-category="ai-ml">
-                        <div class="project-image">👁️</div>
-                        <div class="project-content">
-                            <h3>ViT Image Classifier</h3>
-                            <p class="project-desc">Fine-tuning Vision Transformers on ImageNet100 achieving 85%
-                                accuracy.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>PyTorch & Transformers</li>
-                                    <li>HPC Cluster Training</li>
-                                    <li>Data Augmentation</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="btn-link">View Details &rarr;</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: ShadowTech -->
-                    <div class="project-card" data-category="web-brand">
-                        <div class="project-image">🚀</div>
-                        <div class="project-content">
-                            <h3>ShadowTech Branding</h3>
-                            <p class="project-desc">Futuristic brand concept with generative AI art and high-performance
-                                web design.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>Stable Diffusion Assets</li>
-                                    <li>Responsive Grid Design</li>
-                                    <li>Brand Identity</li>
-                                </ul>
-                            </div>
-                            <a href="project-details.html?id=shadowtech" class="btn-link">View Demo &rarr;</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 6: Laundry DB -->
-                    <div class="project-card" data-category="data-eng">
-                        <div class="project-image">🧺</div>
-                        <div class="project-content">
-                            <h3>Laundry System DB</h3>
-                            <p class="project-desc">Complex normalized relational database design for inventory
-                                management.</p>
-                            <div class="project-highlights">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>3NF SQL Schema</li>
-                                    <li>Stored Procedures</li>
-                                    <li>Query Optimization</li>
-                                </ul>
-                            </div>
-                            <a href="#" class="btn-link">View Details &rarr;</a>
+                    <div class="info-card">
+                        <h3>
+                            <i class="fas fa-language"></i>
+                            Languages
+                        </h3>
+                        <div class="languages">
+                            <span class="lang-tag">English</span>
+                            <span class="lang-tag">Hindi</span>
+                            <span class="lang-tag">Urdu</span>
+                            <span class="lang-tag">Kashmiri</span>
+                            <span class="lang-tag">French</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience" class="section experience-section">
-            <div class="container">
-                <h2 class="section-title">Professional Journey</h2>
-                <div class="timeline">
-                    <!-- Accenture -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Feb 2022 - Aug 2024</div>
-                        <div class="timeline-content">
-                            <h3>Custom Software Engineering Analyst</h3>
-                            <h4>Accenture</h4>
-                            <p class="role-description">Specialized in Adobe Experience Platform (AEP) implementations
-                                and large-scale data analytics.</p>
-                            <ul class="achievements">
-                                <li><strong>Executive Reporting:</strong> Built Power BI dashboards analyzing 500K+
-                                    daily events to drive strategic decisions.</li>
-                                <li><strong>Data Pipelines:</strong> Developed SQL-based ETL workflows integrating Adobe
-                                    & Google Analytics data.</li>
-                                <li><strong>Segmentation:</strong> Performed cohort analysis identifying high-value user
-                                    segments for targeted marketing.</li>
-                                <li><strong>Automation:</strong> Automated KPI reporting, reducing manual effort by 15+
-                                    hours weekly.</li>
-                            </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-label">Professional Journey</div>
+            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+
+            <div class="timeline">
+                <!-- Current: Master's -->
+                <div class="timeline-item">
+                    <div class="timeline-marker current">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Master of Science in Data Science</h3>
+                                <h4>Rowan University</h4>
+                            </div>
+                            <span class="timeline-date">Aug 2024 - May 2026</span>
+                        </div>
+                        <p>
+                            Focusing on advanced machine learning, statistical modeling, and big data systems. 
+                            Conducting research in trustworthy AI and applied ML for real-world systems.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Machine Learning</span>
+                            <span>Deep Learning</span>
+                            <span>Big Data</span>
+                            <span>Research</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- DXC -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Aug 2021 - Feb 2022</div>
-                        <div class="timeline-content">
-                            <h3>Associate Software Developer</h3>
-                            <h4>DXC Technologies</h4>
-                            <p class="role-description">Backend development for enterprise web applications.</p>
-                            <ul class="achievements">
-                                <li>Developed C# .NET APIs with robust SQL Server backends.</li>
-                                <li>Optimized stored procedures for faster data retrieval.</li>
-                                <li>Collaborated in Agile sprints with daily standups and code reviews.</li>
-                            </ul>
+                <!-- Accenture -->
+                <div class="timeline-item">
+                    <div class="timeline-marker work">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Custom Software Engineering Analyst</h3>
+                                <h4>Accenture</h4>
+                            </div>
+                            <span class="timeline-date">Feb 2022 - Aug 2024</span>
+                        </div>
+                        <p>
+                            Built enterprise analytics solutions processing massive behavioral data streams for 
+                            leadership decision-making.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check"></i> Built executive dashboards in Power BI and Tableau analyzing <strong>500K+ daily customer interactions</strong>, enabling data-driven decisions</li>
+                            <li><i class="fas fa-check"></i> Developed SQL-based ETL pipelines using Python/pandas integrating Adobe Analytics and Google Analytics, ensuring data integrity for marketing teams</li>
+                            <li><i class="fas fa-check"></i> Performed customer segmentation using statistical analysis in R to identify high-value user cohorts for targeted campaigns</li>
+                            <li><i class="fas fa-check"></i> Created automated KPI tracking reports with Excel VBA and Python, <strong>reducing manual prep time by 15+ hours/week</strong></li>
+                            <li><i class="fas fa-check"></i> Collaborated with cross-functional teams translating requirements into actionable dashboards and metrics</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Power BI</span>
+                            <span>Tableau</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>ETL</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DXC Technology -->
+                <div class="timeline-item">
+                    <div class="timeline-marker work">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Associate Software Developer</h3>
+                                <h4>DXC Technology</h4>
+                            </div>
+                            <span class="timeline-date">Aug 2021 - Feb 2022</span>
+                        </div>
+                        <p>
+                            Developed enterprise backend systems and data integration tools for scalable applications.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check"></i> Developed C#/.NET applications with SQL Server backends, optimizing queries for improved performance</li>
+                            <li><i class="fas fa-check"></i> Built REST APIs for internal data integration, improving system reliability</li>
+                            <li><i class="fas fa-check"></i> Participated in Agile development using JIRA, performed code reviews and unit testing</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>C#/.NET</span>
+                            <span>SQL Server</span>
+                            <span>REST APIs</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research -->
+                <div class="timeline-item">
+                    <div class="timeline-marker research">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Independent Research Projects</h3>
+                                <h4>Ongoing Research</h4>
+                            </div>
+                            <span class="timeline-date">2020 - Present</span>
+                        </div>
+                        <p>
+                            Conducting research in responsible AI, security, and applied machine learning.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li><i class="fas fa-check"></i> Designed Naïve Bayes-based multimodal recommendation system with focus on feature engineering</li>
+                            <li><i class="fas fa-check"></i> Research on security and privacy challenges in Cloud and IoT systems integrated with 5G networks</li>
+                            <li><i class="fas fa-check"></i> Applied ML techniques emphasizing interpretability, robustness, and performance evaluation</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Research</span>
+                            <span>Security</span>
+                            <span>IoT</span>
+                            <span>5G</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="section skills-section">
-            <div class="container">
-                <h2 class="section-title">Technical Arsenal</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>⚡️ Core & Languages</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Python (Pandas, NumPy)</span><span>95%</span></div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>SQL (Postgres, T-SQL)</span><span>90%</span></div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-tags-cloud">
-                                <span>C# .NET</span>
-                                <span>JavaScript</span>
-                                <span>Bash</span>
-                            </div>
-                        </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-label">Technical Expertise</div>
+            <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Python</span>
+                        <span class="skill-tag expert">SQL</span>
+                        <span class="skill-tag proficient">R</span>
+                        <span class="skill-tag proficient">Java</span>
+                        <span class="skill-tag intermediate">C++</span>
+                        <span class="skill-tag intermediate">C#</span>
+                        <span class="skill-tag intermediate">JavaScript</span>
+                        <span class="skill-tag intermediate">Bash</span>
                     </div>
+                </div>
 
-                    <div class="skill-category">
-                        <h3>🛠 Data Engineering</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info"><span>ETL Pipelines</span><span>90%</span></div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Database Design</span><span>85%</span></div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-tags-cloud">
-                                <span>Docker</span>
-                                <span>MongoDB</span>
-                                <span>InfluxDB</span>
-                                <span>AWS</span>
-                            </div>
-                        </div>
+                <!-- ML & DL -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-brain"></i> Machine Learning & Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">PyTorch</span>
+                        <span class="skill-tag expert">TensorFlow</span>
+                        <span class="skill-tag expert">Scikit-learn</span>
+                        <span class="skill-tag proficient">Keras</span>
+                        <span class="skill-tag proficient">Computer Vision</span>
+                        <span class="skill-tag proficient">NLP</span>
+                        <span class="skill-tag intermediate">Transformers</span>
+                        <span class="skill-tag intermediate">Autoencoders</span>
                     </div>
+                </div>
 
-                    <div class="skill-category">
-                        <h3>🤖 AI & Analytics</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info"><span>Machine Learning</span><span>90%</span></div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-tags-cloud">
-                                <span>Scikit-Learn</span>
-                                <span>PyTorch</span>
-                                <span>Computer Vision</span>
-                                <span>Power BI</span>
-                                <span>Tableau</span>
-                                <span>A/B Testing</span>
-                            </div>
-                        </div>
+                <!-- Data Analysis -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-chart-line"></i> Data Analysis & Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Power BI</span>
+                        <span class="skill-tag expert">Tableau</span>
+                        <span class="skill-tag expert">Excel</span>
+                        <span class="skill-tag expert">Pandas</span>
+                        <span class="skill-tag expert">NumPy</span>
+                        <span class="skill-tag proficient">Matplotlib</span>
+                        <span class="skill-tag proficient">Seaborn</span>
+                        <span class="skill-tag proficient">Plotly</span>
+                        <span class="skill-tag proficient">Jupyter</span>
+                        <span class="skill-tag intermediate">Statistical Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">MySQL</span>
+                        <span class="skill-tag expert">SQL Server</span>
+                        <span class="skill-tag proficient">MongoDB</span>
+                        <span class="skill-tag proficient">InfluxDB</span>
+                        <span class="skill-tag proficient">ETL Pipelines</span>
+                        <span class="skill-tag intermediate">Data Validation</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag proficient">AWS</span>
+                        <span class="skill-tag proficient">Azure</span>
+                        <span class="skill-tag expert">Git</span>
+                        <span class="skill-tag expert">GitHub</span>
+                        <span class="skill-tag proficient">Docker</span>
+                        <span class="skill-tag intermediate">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Analytics Tools -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-chart-bar"></i> Analytics Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Adobe Analytics</span>
+                        <span class="skill-tag expert">Google Analytics</span>
+                        <span class="skill-tag proficient">A/B Testing</span>
+                        <span class="skill-tag intermediate">Customer Segmentation</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="contact" class="section contact-section">
-            <div class="container contact-container">
-                <div class="contact-text">
-                    <h2>Ready to build something great?</h2>
-                    <p style="margin-bottom: 30px; color: #a1a1aa;">I'm currently open to full-time opportunities in
-                        Data Science and Engineering. Let's discuss how I can contribute to your team.</p>
-                    <div class="contact-info">
-                        <div class="contact-item">📧 <a href="mailto:iqbalmaqbol@gmail.com">iqbalmaqbol@gmail.com</a>
+            <!-- Skill Legend -->
+            <div class="skill-legend">
+                <span><span class="legend-dot expert"></span> Expert</span>
+                <span><span class="legend-dot proficient"></span> Proficient</span>
+                <span><span class="legend-dot intermediate"></span> Intermediate</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-label">Featured Work</div>
+            <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+            <p class="section-description">
+                A collection of projects demonstrating my expertise in machine learning, data analytics, and software engineering
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1: Vision Transformer -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-eye"></i>
                         </div>
-                        <div class="contact-item">🔗 <a href="https://linkedin.com/in/Iqbal-sofi"
-                                target="_blank">linkedin.com/in/Iqbal-sofi</a></div>
-                        <div class="contact-item">📍 Camden, NJ (Open to Relocate)</div>
+                        <div class="project-links">
+                            <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Vision Transformer Image Classification</h3>
+                        <p>
+                            Fine-tuned pre-trained Vision Transformer (ViT) on ImageNet100 dataset achieving 
+                            <strong>85% validation accuracy</strong>. Implemented advanced techniques including 
+                            data augmentation, learning rate schedules, and hyperparameter optimization. 
+                            Trained on university HPC cluster with GPU acceleration.
+                        </p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>Computer Vision</span>
+                            <span>HPC</span>
+                            <span>GPU</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 85% Accuracy</span>
+                            <span><i class="fas fa-trophy"></i> Production-Ready</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Defect Detection -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Defect Detection with Autoencoders</h3>
+                        <p>
+                            Implemented VQ-VAE (Vector Quantized Variational Autoencoder) for unsupervised anomaly 
+                            detection on manufacturing defect dataset. Achieved <strong>92% detection accuracy</strong> 
+                            using reconstruction error as anomaly score. Applied to real-world quality control scenarios.
+                        </p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>VQ-VAE</span>
+                            <span>Anomaly Detection</span>
+                            <span>Unsupervised Learning</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-check-circle"></i> 92% Accuracy</span>
+                            <span><i class="fas fa-cog"></i> Manufacturing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: IoT Sensor Analytics -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IoT Sensor Data Analytics System</h3>
+                        <p>
+                            Built dual-database architecture for storing and analyzing simulated smart home sensor data. 
+                            Implemented data retention policies, statistical anomaly detection algorithms, and 
+                            interactive dashboards for real-time monitoring.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>InfluxDB</span>
+                            <span>Time Series</span>
+                            <span>IoT</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Security Research -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Security Perspective of Cloud and IoT in 5G Networks</h3>
+                        <p>
+                            Research paper analyzing security vulnerabilities and architectural risks in cloud-integrated 
+                            IoT systems under emerging 5G infrastructure. Explored implications for scalable data systems, 
+                            privacy, and secure communication.
+                        </p>
+                        <div class="project-tech">
+                            <span>Research</span>
+                            <span>Security</span>
+                            <span>Cloud Computing</span>
+                            <span>IoT</span>
+                            <span>5G Networks</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Customer Behavior Analytics -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Behavior Analytics Dashboard</h3>
+                        <p>
+                            Enterprise-scale Power BI dashboard analyzing 500K+ daily customer interactions at Accenture. 
+                            Integrated multiple data sources (Adobe Analytics, Google Analytics) to provide real-time 
+                            insights for marketing and product teams.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                            <span>ETL</span>
+                            <span>Adobe Analytics</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-database"></i> 500K+ Daily Events</span>
+                            <span><i class="fas fa-building"></i> Enterprise</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Recommendation System -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multimodal Recommendation System</h3>
+                        <p>
+                            Designed and implemented Naïve Bayes-based multimodal recommendation system with emphasis 
+                            on feature engineering and model evaluation. Applied to real-world datasets with focus 
+                            on interpretability and performance.
+                        </p>
+                        <div class="project-tech">
+                            <span>Machine Learning</span>
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Feature Engineering</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/iqbalsofi" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    <span>View GitHub Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <p class="section-description">
+                I'm currently open to new opportunities and collaborations. Whether you have a question or 
+                just want to say hi, I'll try my best to get back to you!
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-methods">
+                    <a href="mailto:iqbalmaqbol@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>iqbalmaqbol@gmail.com</p>
+                    </a>
+
+                    <a href="https://github.com/iqbalsofi" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>github.com/iqbalsofi</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/iqbalsofi" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Glassboro, NJ, USA</p>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="john@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea rows="4" placeholder="Hi Iqbal..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
 
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2025 Iqbal Maqbool Sofi. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/Iqbal-sofi" target="_blank">LinkedIn</a>
-                <a href="mailto:iqbalmaqbol@gmail.com">Email</a>
-                <!-- Add GitHub if available -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Iqbal Maqbool Sofi</h3>
+                    <p>Data Scientist & ML Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/iqbalsofi" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/iqbalsofi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:iqbalmaqbol@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Iqbal Maqbool Sofi. Built with passion for data science.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Project Detail Modal -->
-    <div class="project-detail-modal" id="project-modal" style="display: none;">
-        <div class="modal-content">
-            <div class="close-modal">&times;</div>
-            <div class="project-icon" style="font-size: 3rem; margin-bottom: 10px;">🚀</div>
-            <h2 id="modal-title">Project Title</h2>
-            <p id="modal-desc" style="color: var(--text-secondary); margin-bottom: 20px;">Project description goes here.
-            </p>
-
-            <div class="project-highlights"
-                style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px;">
-                <h4
-                    style="color: var(--accent-primary); margin-bottom: 10px; text-transform: uppercase; font-size: 0.8rem;">
-                    Key Highlights</h4>
-                <ul id="modal-highlights" style="list-style: none; padding: 0;">
-                    <!-- Highlights injected here -->
-                </ul>
-            </div>
-
-            <a href="#" id="modal-link" class="btn-primary">View Code / Demo</a>
-        </div>
-    </div>
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
-
 </html>
