@@ -1,0 +1,6 @@
+# Ignore old/backup files
+old_*
+*.md
+!README.md
+resume.txt
+DEPLOYMENT.md
