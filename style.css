@@ -694,6 +694,11 @@ section {
     color: var(--accent);
 }
 
+.timeline-marker.roots {
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
 .timeline-item:hover .timeline-marker {
     transform: scale(1.1);
 }
