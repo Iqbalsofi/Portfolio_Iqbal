@@ -343,90 +343,52 @@ pre {
 }
 
 /* =========================================
-   Terminal Window
+   Hero Stats Grid
    ========================================= */
 .hero-visual {
     position: relative;
     animation: fadeIn 1s ease 0.3s both;
 }
 
-.terminal-window {
+.hero-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.hero-stat-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: var(--transition);
 }
 
-.terminal-header {
-    background: #0d0d0d;
-    padding: 0.75rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border-bottom: 1px solid var(--border);
+.hero-stat-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
 }
 
-.terminal-header .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #444;
+.hero-stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    line-height: 1;
 }
 
-.terminal-header .dot:nth-child(1) {
-    background: #ff5f57;
-}
-
-.terminal-header .dot:nth-child(2) {
-    background: #ffbd2e;
-}
-
-.terminal-header .dot:nth-child(3) {
-    background: #28ca42;
-}
-
-.terminal-title {
-    margin-left: auto;
-    font-size: 0.85rem;
+.hero-stat-label {
+    font-size: 0.9rem;
     color: var(--text-muted);
+    font-weight: 500;
+    line-height: 1.4;
 }
 
-.terminal-body {
-    padding: 1.5rem;
-    overflow-x: auto;
-}
-
-.terminal-body code {
-    display: block;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: #e5e7eb;
-}
-
-.comment {
-    color: #6b7280;
-}
-
-.keyword {
-    color: #c678dd;
-}
-
-.class {
-    color: #e5c07b;
-}
-
-.function {
-    color: #61afef;
-}
-
-.param {
-    color: #d19a66;
-}
-
-.string {
-    color: #98c379;
-}
 
 /* =========================================
    Scroll Indicator
