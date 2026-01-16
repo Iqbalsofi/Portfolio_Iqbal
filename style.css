@@ -1436,7 +1436,9 @@ section {
         height: 32px;
         font-size: 0.875rem;
     }
-}/* =========================================
+}
+
+/* =========================================
    Flagship Projects Section
    ========================================= */
 .flagship-projects {
@@ -1446,8 +1448,8 @@ section {
 
 .flagship-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     margin-top: 3rem;
 }
 
