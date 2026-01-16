@@ -1436,4 +1436,130 @@ section {
         height: 32px;
         font-size: 0.875rem;
     }
+}/* =========================================
+   Flagship Projects Section
+   ========================================= */
+.flagship-projects {
+    background: var(--bg);
+    padding: 100px 0;
+}
+
+.flagship-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.flagship-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.flagship-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+}
+
+.flagship-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.flagship-badge.ml {
+    background: var(--accent);
+}
+
+.flagship-preview {
+    width: 100%;
+    height: 500px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.flagship-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.flagship-content {
+    padding: 2.5rem;
+}
+
+.flagship-content h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.flagship-content p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.flagship-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.feature-tag {
+    padding: 0.5rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.flagship-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .flagship-preview {
+        height: 350px;
+    }
+
+    .flagship-content {
+        padding: 1.5rem;
+    }
+
+    .flagship-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .flagship-links {
+        flex-direction: column;
+    }
+
+    .flagship-links .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
