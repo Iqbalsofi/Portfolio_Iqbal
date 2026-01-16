@@ -1544,6 +1544,10 @@ section {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+    .flagship-grid {
+        grid-template-columns: 1fr;
+    }
+
     .flagship-preview {
         height: 350px;
     }
