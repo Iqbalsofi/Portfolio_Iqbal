@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+<!-- Force Rebuild: 2026-01-13 12:57 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iqbal Maqbool Sofi | MS Data Science Student & ML Engineer</title>
     <meta name="description"
-        content="MS Data Science student with 3 years production ML experience. Building scalable AI systems.">
+        content="Iqbal Maqbool Sofi - Data Scientist & ML Engineer | Accenture | Rowan University | Master's in Data Science">
+    <meta name="keywords" content="Data Science, Machine Learning, Analytics, Python, Accenture, Portfolio">
+    <title>Iqbal Maqbool Sofi | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
 
     <!-- Google Analytics -->
@@ -18,367 +21,138 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-VRP0REZD8N');
     </script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <a href="#" class="logo">IMS</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Iqbal</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="experience.html" class="nav-item">Experience</a>
+                <a href="projects.html" class="nav-item">Projects</a>
+                <a href="skills.html" class="nav-item">Skills</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
+    <section id="home" class="hero">
+        <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
                 <h1 class="hero-title">
-                    Iqbal Maqbool Sofi
+                    Hi, I'm <span class="gradient-text">Iqbal Maqbool Sofi</span>
                 </h1>
                 <p class="hero-subtitle">MS Data Science Student & ML Engineer</p>
                 <p class="hero-description">
-                    Building scalable ML systems with <strong>3 years production experience</strong> at Fortune 500
-                    companies.
-                    Currently at Rowan University exploring <strong>Vision Transformers, Autoencoders, and ML System
-                        Design</strong> on HPC clusters.
+                    Building scalable ML systems · <strong>3 years production experience</strong> · Rowan
+                    University<br />
+                    Currently pursuing <strong>MS in Data Science</strong>, working with <strong>Vision Transformers and
+                        Autoencoders</strong> on HPC clusters. Strengthening foundations in <strong>algorithms and ML
+                        system design</strong> to build scalable, mathematically sound AI systems.
                 </p>
+
+                <div class="hero-tags">
+                    <span class="tag">⚙️ C++</span>
+                    <span class="tag">🔧 C#</span>
+                    <span class="tag">☕ Java</span>
+                    <span class="tag">🐍 Python</span>
+                    <span class="tag">⚡ PyTorch</span>
+                    <span class="tag">🧠 TensorFlow</span>
+                </div>
+
+
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Work</a>
-                    <a href="#" class="btn btn-secondary">Download Resume</a>
+                    <a href="Iqbal_sofi_R.pdf" download class="btn btn-primary">
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View work</span>
+                    </a>
+                    <a href="https://github.com/iqbalsofi" target="_blank" class="btn btn-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/iqbalsofi" target="_blank" class="btn btn-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">↓</div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">500K+</div>
-                    <div class="stat-label">Events/Day<br>Processed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">&lt;100ms</div>
-                    <div class="stat-label">Inference<br>Latency</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">99.7%</div>
-                    <div class="stat-label">System<br>Uptime</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    I'm a B.Tech graduate from Amity University Noida who spent 3 years building production ML pipelines
-                    and APIs at
-                    Accenture and DXC Technology.
-                    I realized I was implementing models without fully understanding the mathematics behind them.
-                </p>
-                <p>
-                    That's why I went back to school for my MS in Data Science at Rowan University. I want to understand
-                    not just <em>how</em>
-                    to build AI systems, but <em>why</em> they work—from attention mechanisms in Transformers to the
-                    calculus behind gradient descent.
-                </p>
-                <p>
-                    Right now, I'm bridging the gap between my production engineering experience and academic rigor. I
-                    believe the best ML Engineers
-                    understand both the <strong>code and the math</strong>.
-                </p>
-
-                <div class="focus-areas">
-                    <h3>Current Focus</h3>
-                    <div class="focus-grid">
-                        <div class="focus-card">
-                            <div class="focus-icon">🧮</div>
-                            <h4>Algorithms</h4>
-                            <p>Strengthening DSA foundations</p>
-                        </div>
-                        <div class="focus-card">
-                            <div class="focus-icon">🧠</div>
-                            <h4>Deep Learning</h4>
-                            <p>ViT & Autoencoders on HPC</p>
-                        </div>
-                        <div class="focus-card">
-                            <div class="focus-icon">🏗️</div>
-                            <h4>ML System Design</h4>
-                            <p>Scaling from K to M events</p>
-                        </div>
-                        <div class="focus-card">
-                            <div class="focus-icon">⚙️</div>
-                            <h4>MLOps</h4>
-                            <p>Kubernetes automation</p>
-                        </div>
+            <div class="hero-visual">
+                <div class="hero-stats-grid">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">500K+</div>
+                        <div class="hero-stat-label">Events/Day<br />Processed</div>
+                    </div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">&lt;100ms</div>
+                        <div class="hero-stat-label">Inference<br />Latency</div>
+                    </div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">99.7%</div>
+                        <div class="hero-stat-label">System<br />Uptime</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Production-ready ML systems with live demos</p>
-
-            <div class="projects-grid">
-                <!-- Project 1: Churn Prediction -->
-                <div class="project-card">
-                    <div class="project-demo">
-                        <iframe src="https://iqbalsofi.github.io/churn-prediction-dashboard/" loading="lazy"></iframe>
-                    </div>
-                    <div class="project-info">
-                        <h3>Customer Churn Prediction</h3>
-                        <p>Real-time ML inference with &lt;100ms latency using XGBoost. End-to-end pipeline from data
-                            processing to deployment.</p>
-                        <div class="project-tags">
-                            <span>XGBoost</span>
-                            <span>Python</span>
-                            <span>&lt;100ms</span>
-                            <span>89% Accuracy</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://iqbalsofi.github.io/churn-prediction-dashboard/" target="_blank"
-                                class="btn-small">Live Demo</a>
-                            <a href="https://github.com/iqbalsofi" target="_blank"
-                                class="btn-small btn-outline">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Image Classifier -->
-                <div class="project-card">
-                    <div class="project-demo">
-                        <iframe src="https://iqbalsofi.github.io/ai-image-classifier/" loading="lazy"></iframe>
-                    </div>
-                    <div class="project-info">
-                        <h3>AI Image Classifier</h3>
-                        <p>Zero-backend client-side inference with MobileNetV2. Eliminates server costs while
-                            maintaining 92% accuracy.</p>
-                        <div class="project-tags">
-                            <span>TensorFlow.js</span>
-                            <span>Client-Side</span>
-                            <span>$0 Backend</span>
-                            <span>1,000 Classes</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://iqbalsofi.github.io/ai-image-classifier/" target="_blank"
-                                class="btn-small">Live Demo</a>
-                            <a href="https://github.com/iqbalsofi" target="_blank"
-                                class="btn-small btn-outline">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Sentiment Analysis -->
-                <div class="project-card">
-                    <div class="project-demo">
-                        <iframe src="https://iqbalsofi.github.io/sentiment-analysis-api/" loading="lazy"></iframe>
-                    </div>
-                    <div class="project-info">
-                        <h3>Sentiment Analysis API</h3>
-                        <p>FastAPI backend with &lt;200ms response time for real-time sentiment classification.
-                            Production deployment patterns.</p>
-                        <div class="project-tags">
-                            <span>FastAPI</span>
-                            <span>NLP</span>
-                            <span>&lt;200ms</span>
-                            <span>87% Accuracy</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://iqbalsofi.github.io/sentiment-analysis-api/" target="_blank"
-                                class="btn-small">Live Demo</a>
-                            <a href="https://github.com/iqbalsofi" target="_blank"
-                                class="btn-small btn-outline">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker current"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>MS in Data Science</h3>
-                                <h4>Rowan University</h4>
-                            </div>
-                            <span class="timeline-date">Aug 2024 - Present</span>
-                        </div>
-                        <p>Specializing in Big Data Systems and Deep Learning. Working with Vision Transformers and
-                            Autoencoders on university HPC clusters.</p>
-                        <div class="timeline-tags">
-                            <span>Deep Learning</span>
-                            <span>ViT</span>
-                            <span>HPC</span>
-                            <span>ML System Design</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Custom Software Engineering Analyst</h3>
-                                <h4>Accenture</h4>
-                            </div>
-                            <span class="timeline-date">Feb 2022 - Aug 2024</span>
-                        </div>
-                        <ul class="timeline-achievements">
-                            <li>Built and optimized ML pipelines processing <strong>500K+ events/day with 99.7%
-                                    uptime</strong></li>
-                            <li>Implemented XGBoost churn model achieving <strong>89% accuracy</strong>, reducing
-                                attrition by 23%</li>
-                            <li>Refactored data pipelines using Spark, reducing processing time from 4.5hrs to 45min
-                                (90% improvement)</li>
-                        </ul>
-                        <div class="timeline-tags">
-                            <span>Python</span>
-                            <span>Spark</span>
-                            <span>AWS</span>
-                            <span>XGBoost</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>Associate Software Developer</h3>
-                                <h4>DXC Technology</h4>
-                            </div>
-                            <span class="timeline-date">Aug 2021 - Feb 2022</span>
-                        </div>
-                        <ul class="timeline-achievements">
-                            <li>Developed RESTful APIs handling <strong>50K+ daily transactions</strong> using C# and
-                                .NET</li>
-                            <li>Optimized query performance, reducing API response time by 40% (500ms → 300ms)</li>
-                        </ul>
-                        <div class="timeline-tags">
-                            <span>C#</span>
-                            <span>.NET</span>
-                            <span>REST APIs</span>
-                            <span>SQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker education"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3>B.Tech in Computer Science</h3>
-                                <h4>Amity University, Noida, India</h4>
-                            </div>
-                            <span class="timeline-date">2017 - 2021</span>
-                        </div>
-                        <p>Foundation in software engineering, algorithms, and data structures.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Core Engineering</h3>
-                    <div class="skill-pills">
-                        <span>C++</span>
-                        <span>C#</span>
-                        <span>Java</span>
-                        <span>Python</span>
-                        <span>JavaScript</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> ML & Deep Learning</h3>
-                    <div class="skill-pills">
-                        <span>PyTorch</span>
-                        <span>TensorFlow</span>
-                        <span>Scikit-learn</span>
-                        <span>XGBoost</span>
-                        <span>Vision Transformers</span>
-                        <span>Autoencoders</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> MLOps & Cloud</h3>
-                    <div class="skill-pills">
-                        <span>Docker</span>
-                        <span>Kubernetes</span>
-                        <span>AWS</span>
-                        <span>CI/CD</span>
-                        <span>FastAPI</span>
-                        <span>REST APIs</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-project-diagram"></i> Algorithms & DS</h3>
-                    <div class="skill-pills">
-                        <span>Graphs</span>
-                        <span>Trees</span>
-                        <span>Dynamic Programming</span>
-                        <span>Complexity Analysis</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Data Analytics</h3>
-                    <div class="skill-pills">
-                        <span>Tableau</span>
-                        <span>Power BI</span>
-                        <span>Adobe Analytics</span>
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> HPC</h3>
-                    <div class="skill-pills">
-                        <span>GPU Computing</span>
-                        <span>NVIDIA A100</span>
-                        <span>Cluster Computing</span>
-                    </div>
-                </div>
+    <!-- Quick Links CTA -->
+    <section style="padding: 60px 0; background: var(--bg-light);">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 3rem;">Explore My <span
+                    class="gradient-text">Portfolio</span></h2>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <a href="about.html" class="info-card"
+                    style="text-decoration: none; display: block; text-align: center; padding: 2rem;">
+                    <i class="fas fa-user" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">About Me</h3>
+                    <p style="color: var(--text-muted); margin: 0;">My journey & focus areas</p>
+                </a>
+                <a href="projects.html" class="info-card"
+                    style="text-decoration: none; display: block; text-align: center; padding: 2rem;">
+                    <i class="fas fa-code" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Projects</h3>
+                    <p style="color: var(--text-muted); margin: 0;">Flagship & research work</p>
+                </a>
+                <a href="experience.html" class="info-card"
+                    style="text-decoration: none; display: block; text-align: center; padding: 2rem;">
+                    <i class="fas fa-briefcase"
+                        style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Experience</h3>
+                    <p style="color: var(--text-muted); margin: 0;">Professional timeline</p>
+                </a>
+                <a href="skills.html" class="info-card"
+                    style="text-decoration: none; display: block; text-align: center; padding: 2rem;">
+                    <i class="fas fa-cogs" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Skills</h3>
+                    <p style="color: var(--text-muted); margin: 0;">Technical expertise</p>
+                </a>
             </div>
         </div>
     </section>
@@ -386,31 +160,106 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-links">
-                <a href="https://github.com/iqbalsofi" target="_blank" class="contact-link">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://linkedin.com/in/iqbalsofi" target="_blank" class="contact-link">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="mailto:iqbal@example.com" class="contact-link">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <p class="section-description">
+                I'm currently open to new opportunities and collaborations. Whether you have a question or
+                just want to say hi, I'll try my best to get back to you!
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-methods">
+                    <a href="mailto:iqbalmaqbol@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>iqbalmaqbol@gmail.com</p>
+                    </a>
+
+                    <a href="https://github.com/iqbalsofi" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>github.com/iqbalsofi</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/iqbalsofi" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+1 (856) 244-0515</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Glassboro, NJ, USA</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
-            <a href="#" class="btn btn-primary" style="margin-top: 2rem;">Download Resume</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Iqbal Maqbool Sofi. Built with passion.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Iqbal Maqbool Sofi</h3>
+                    <p>Data Scientist & ML Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/iqbalsofi" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/iqbalsofi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:iqbalmaqbol@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-dim);">
+                    "From village football fields in Kashmir to building ML systems - the journey has been about
+                    staying curious, working hard, and never forgetting where I came from."
+                </p>
+                <p>&copy; 2026 Iqbal Maqbool Sofi. Built with passion for data science.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
