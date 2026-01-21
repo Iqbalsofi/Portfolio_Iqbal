@@ -61,8 +61,9 @@
                 <p class="hero-description">
                     Building scalable ML systems · <strong>3 years production experience</strong> · Rowan
                     University<br />
-                    Currently pursuing <strong>MS in Data Science</strong>, specializing in Big Data Systems and Deep
-                    Learning
+                    Currently pursuing <strong>MS in Data Science</strong>, working with <strong>Vision Transformers and
+                        Autoencoders</strong> on HPC clusters. Strengthening foundations in <strong>algorithms and ML
+                        system design</strong> to build scalable, mathematically sound AI systems.
                 </p>
 
                 <div class="hero-tags">
@@ -117,6 +118,61 @@
 
         <div class="scroll-indicator">
             <div class="mouse"></div>
+        </div>
+    </section>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-label">My Journey</div>
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+
+            <div class="about-content">
+                <p class="about-intro">
+                    I'm a Computer Science graduate (BS from Rowan University) who spent 3 years as a Software Developer
+                    and Data Analyst at Accenture and DXC Technology. During that time, I built production ML pipelines
+                    and APIs that I'm proud of, but I realized something: I was implementing models without fully
+                    understanding the mathematics and theory behind them.
+                </p>
+
+                <p class="about-why">
+                    That's why I went back to school for my MS in Data Science at Rowan University. I want to understand
+                    not just <em>how</em> to build AI systems, but <em>why</em> they work - from attention mechanisms in
+                    Transformers to the calculus behind gradient descent.
+                </p>
+
+                <div class="about-focus">
+                    <h3>Right now, I'm focusing on bridging the gap between my production engineering experience and
+                        academic rigor:</h3>
+                    <div class="focus-grid">
+                        <div class="focus-item">
+                            <div class="focus-icon">🧮</div>
+                            <h4>Algorithms</h4>
+                            <p>Strengthening my DSA foundations through systematic problem-solving</p>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">🧠</div>
+                            <h4>Deep Learning Theory</h4>
+                            <p>Exploring Vision Transformers and Autoencoders on university HPC clusters</p>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">🏗️</div>
+                            <h4>ML System Design</h4>
+                            <p>Learning how to architect systems that scale from thousands to millions of events</p>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon">⚙️</div>
+                            <h4>MLOps</h4>
+                            <p>Moving from manual pipeline optimization to automated orchestration with Kubernetes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="about-philosophy">
+                    I believe the best ML Engineers understand both the code <strong>and</strong> the math.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -431,14 +487,14 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Research & Learning Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-label">Featured Work</div>
-            <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+            <div class="section-label">Academic Work</div>
+            <h2 class="section-title">Research & Learning <span class="gradient-text">Projects</span></h2>
             <p class="section-description">
-                A collection of projects demonstrating my expertise in machine learning, data analytics, and software
-                engineering
+                Projects from my MS program demonstrating exploration of advanced topics - Vision Transformers,
+                Autoencoders, and algorithmic problem-solving
             </p>
 
             <div class="projects-grid">
@@ -458,23 +514,24 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Vision Transformer Image Classification</h3>
+                        <h3>Vision Transformer (ViT) for Image Classification</h3>
                         <p>
-                            Fine-tuned pre-trained Vision Transformer (ViT) on ImageNet100 dataset achieving
-                            <strong>85% validation accuracy</strong>. Implemented advanced techniques including
-                            data augmentation, learning rate schedules, and hyperparameter optimization.
-                            Trained on university HPC cluster with GPU acceleration.
+                            <strong>Implementing attention-based architecture from "An Image is Worth 16x16 Words"
+                                paper.</strong>
+                            Working with Vision Transformers on Rowan University HPC cluster (NVIDIA A100 GPUs) to
+                            understand self-attention mechanisms vs traditional CNNs. Exploring patch embedding,
+                            positional encoding, and multi-head attention.
                         </p>
                         <div class="project-tech">
                             <span>PyTorch</span>
                             <span>Transformers</span>
-                            <span>Computer Vision</span>
-                            <span>HPC</span>
-                            <span>GPU</span>
+                            <span>HPC Cluster</span>
+                            <span>GPU (A100)</span>
+                            <span>Attention Mechanisms</span>
                         </div>
                         <div class="project-stats">
-                            <span><i class="fas fa-check-circle"></i> 85% Accuracy</span>
-                            <span><i class="fas fa-trophy"></i> Production-Ready</span>
+                            <span><i class="fas fa-graduation-cap"></i> MS Research Project</span>
+                            <span><i class="fas fa-server"></i> HPC Training</span>
                         </div>
                     </div>
                 </article>
@@ -492,31 +549,33 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Defect Detection with Autoencoders</h3>
+                        <h3>VQ-VAE Autoencoder for Anomaly Detection</h3>
                         <p>
-                            Implemented VQ-VAE (Vector Quantized Variational Autoencoder) for unsupervised anomaly
-                            detection on manufacturing defect dataset. Achieved <strong>92% detection accuracy</strong>
-                            using reconstruction error as anomaly score. Applied to real-world quality control
-                            scenarios.
+                            <strong>Building variational autoencoder to understand latent space representations and
+                                reconstruction loss.</strong>
+                            Working with Vector Quantized Variational AutoEncoders for manufacturing defect detection.
+                            Exploring how autoencoders learn compressed representations and detect anomalies through
+                            reconstruction error.
                         </p>
                         <div class="project-tech">
-                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
                             <span>VQ-VAE</span>
-                            <span>Anomaly Detection</span>
+                            <span>Latent Space</span>
+                            <span>Reconstruction Loss</span>
                             <span>Unsupervised Learning</span>
                         </div>
                         <div class="project-stats">
-                            <span><i class="fas fa-check-circle"></i> 92% Accuracy</span>
-                            <span><i class="fas fa-cog"></i> Manufacturing</span>
+                            <span><i class="fas fa-graduation-cap"></i> MS Research</span>
+                            <span><i class="fas fa-brain"></i> Understanding Autoencoders</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 3: IoT Sensor Analytics -->
+                <!-- Project 3: Algorithm Visualizer -->
                 <article class="project-card">
                     <div class="project-header">
                         <div class="project-icon">
-                            <i class="fas fa-microchip"></i>
+                            <i class="fas fa-project-diagram"></i>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/iqbalsofi" target="_blank" class="project-link">
@@ -525,18 +584,24 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>IoT Sensor Data Analytics System</h3>
+                        <h3>Algorithm Visualizer</h3>
                         <p>
-                            Built dual-database architecture for storing and analyzing simulated smart home sensor data.
-                            Implemented data retention policies, statistical anomaly detection algorithms, and
-                            interactive dashboards for real-time monitoring.
+                            <strong>Interactive tool to visualize graph traversal and dynamic programming
+                                algorithms.</strong>
+                            Built while strengthening my DSA foundations through systematic problem-solving. Visualizes
+                            BFS, DFS, Dijkstra's algorithm, and DP patterns using D3.js. Helps me understand
+                            computational complexity and algorithm behavior.
                         </p>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>InfluxDB</span>
-                            <span>Time Series</span>
-                            <span>IoT</span>
-                            <span>Analytics</span>
+                            <span>JavaScript</span>
+                            <span>D3.js</span>
+                            <span>Graph Algorithms</span>
+                            <span>Dynamic Programming</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-book"></i> Learning DSA</span>
+                            <span><i class="fas fa-chart-line"></i> Complexity Analysis</span>
                         </div>
                     </div>
                 </article>
