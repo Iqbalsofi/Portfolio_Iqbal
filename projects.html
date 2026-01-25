@@ -22,96 +22,103 @@
                 <a href="experience.html">Experience</a>
                 <a href="skills.html">Skills</a>
             </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <section id="projects" style="padding-top: 120px;">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle" style="text-align: center;">Production-ready ML systems and academic research
-            </p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle" style="text-align: center;">Machine Learning and Data Science projects from
+                academic coursework and self-learning</p>
 
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Customer Churn Prediction -->
                 <div class="project-card">
                     <div class="project-demo">
                         <iframe src="https://iqbalsofi.github.io/churn-prediction-dashboard/" loading="lazy"></iframe>
                     </div>
                     <div class="project-info">
                         <h3>Customer Churn Prediction</h3>
-                        <p><strong>Challenge:</strong> Build real-time ML inference pipeline that processes 500K+
-                            events/day with &lt;100ms latency.</p>
-                        <p><strong>Solution:</strong> Implemented XGBoost model with optimized feature engineering and
-                            efficient Python pipeline.</p>
-                        <p><strong>Learning:</strong> "Learned to balance model complexity with inference
-                            speed—discovered that simpler models often outperform complex ones in production."</p>
+                        <p>Built a churn prediction model using <strong>XGBoost</strong> as part of an end-to-end
+                            machine learning pipeline.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-muted);">
+                            <li>Performed <strong>feature engineering</strong> (RFM and behavioral features)</li>
+                            <li>Evaluated model using <strong>accuracy and AUC-ROC</strong></li>
+                            <li>Used <strong>SHAP</strong> to analyze feature importance and model behavior</li>
+                        </ul>
                         <div class="project-tags">
                             <span>XGBoost</span>
+                            <span>SHAP</span>
                             <span>Python</span>
-                            <span>&lt;100ms Latency</span>
-                            <span>89% Accuracy</span>
+                            <span>Feature Engineering</span>
                         </div>
                         <div class="project-links">
                             <a href="https://iqbalsofi.github.io/churn-prediction-dashboard/" target="_blank"
                                 class="btn btn-primary">Live Demo</a>
-                            <a href="https://github.com/iqbalsofi" target="_blank" class="btn btn-secondary">View
-                                Code</a>
+                            <a href="https://github.com/iqbalsofi/churn-prediction-dashboard" target="_blank"
+                                class="btn btn-secondary">View Code</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: Vision Transformer Image Classification -->
                 <div class="project-card">
                     <div class="project-demo">
                         <iframe src="https://iqbalsofi.github.io/ai-image-classifier/" loading="lazy"></iframe>
                     </div>
                     <div class="project-info">
-                        <h3>AI Image Classifier</h3>
-                        <p><strong>Challenge:</strong> Build zero-backend image classification to eliminate server costs
-                            while maintaining accuracy.</p>
-                        <p><strong>Solution:</strong> Implemented client-side inference using MobileNetV2 with
-                            TensorFlow.js (1,000 classes).</p>
-                        <p><strong>Learning:</strong> "Discovered how to optimize deep learning models for browser
-                            performance—learned about quantization and model compression."</p>
+                        <h3>Vision Transformer Image Classification</h3>
+                        <p>Fine-tuned a <strong>Vision Transformer (ViT-B/16)</strong> model on a subset of ImageNet
+                            data.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-muted);">
+                            <li>Applied modern <strong>data augmentation techniques</strong></li>
+                            <li>Evaluated <strong>validation performance</strong> on held-out test set</li>
+                            <li>Explored attention visualization to understand model predictions</li>
+                        </ul>
                         <div class="project-tags">
-                            <span>TensorFlow.js</span>
-                            <span>Client-Side ML</span>
-                            <span>$0 Backend Cost</span>
-                            <span>92% Accuracy</span>
+                            <span>PyTorch</span>
+                            <span>Vision Transformer</span>
+                            <span>Computer Vision</span>
+                            <span>Deep Learning</span>
                         </div>
                         <div class="project-links">
                             <a href="https://iqbalsofi.github.io/ai-image-classifier/" target="_blank"
                                 class="btn btn-primary">Live Demo</a>
-                            <a href="https://github.com/iqbalsofi" target="_blank" class="btn btn-secondary">View
-                                Code</a>
+                            <a href="https://github.com/iqbalsofi/ai-image-classifier" target="_blank"
+                                class="btn btn-secondary">View Code</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3: Real-Time Sentiment Analysis API -->
                 <div class="project-card">
                     <div class="project-demo">
                         <iframe src="https://iqbalsofi.github.io/sentiment-analysis-api/" loading="lazy"></iframe>
                     </div>
                     <div class="project-info">
-                        <h3>Sentiment Analysis API</h3>
-                        <p><strong>Challenge:</strong> Build production-ready NLP API with fast response times for
-                            real-time analysis.</p>
-                        <p><strong>Solution:</strong> Developed FastAPI backend with optimized NLP pipeline achieving
-                            &lt;200ms response time.</p>
-                        <p><strong>Learning:</strong> "Explored production API design patterns and learned how to handle
-                            concurrent requests efficiently."</p>
+                        <h3>Real-Time Sentiment Analysis API</h3>
+                        <p>Developed a sentiment analysis API using a <strong>fine-tuned BERT model</strong>.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-muted);">
+                            <li>Containerized the application using <strong>Docker</strong></li>
+                            <li>Built API endpoints with <strong>FastAPI</strong></li>
+                            <li>Tested and optimized <strong>inference performance</strong></li>
+                        </ul>
                         <div class="project-tags">
-                            <span>FastAPI</span>
+                            <span>BERT</span>
                             <span>NLP</span>
-                            <span>&lt;200ms Response</span>
-                            <span>87% Accuracy</span>
+                            <span>Docker</span>
+                            <span>FastAPI</span>
                         </div>
                         <div class="project-links">
                             <a href="https://iqbalsofi.github.io/sentiment-analysis-api/" target="_blank"
                                 class="btn btn-primary">Live Demo</a>
-                            <a href="https://github.com/iqbalsofi" target="_blank" class="btn btn-secondary">View
-                                Code</a>
+                            <a href="https://github.com/iqbalsofi/sentiment-analysis-api" target="_blank"
+                                class="btn btn-secondary">View Code</a>
                         </div>
                     </div>
                 </div>
@@ -121,9 +128,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Iqbal Maqbool Sofi. Building ML systems with passion.</p>
+            <p>&copy; 2025 Iqbal Maqbool Sofi. Open to opportunities.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
