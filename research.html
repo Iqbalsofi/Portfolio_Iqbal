@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Iqbal Maqbool Sofi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html" class="logo">IMS</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="experience.html">Experience</a>
+                <a href="skills.html">Skills</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="research" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <p class="section-subtitle" style="text-align: center;">Projects exploring NLP, Computer Vision, and Applied
+                Machine Learning</p>
+
+            <!-- Research Interests -->
+            <div class="research-section">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text);">Research Interests</h3>
+                <div class="focus-grid">
+                    <div class="focus-card">
+                        <div class="focus-icon">📝</div>
+                        <h4>Natural Language Processing</h4>
+                        <p>Transformer-based models for text classification, sentiment analysis, and understanding
+                            contextual representations in language models.</p>
+                    </div>
+                    <div class="focus-card">
+                        <div class="focus-icon">👁️</div>
+                        <h4>Computer Vision</h4>
+                        <p>Vision Transformers (ViT), attention mechanisms in image classification, and understanding
+                            how spatial representations are learned.</p>
+                    </div>
+                    <div class="focus-card">
+                        <div class="focus-icon">🔍</div>
+                        <h4>Model Interpretability</h4>
+                        <p>Understanding model decisions through SHAP, attention visualization, and feature importance
+                            analysis for trustworthy ML systems.</p>
+                    </div>
+                    <div class="focus-card">
+                        <div class="focus-icon">⚙️</div>
+                        <h4>Applied Machine Learning</h4>
+                        <p>Bridging research and practice—exploring how theoretical advances translate to real-world
+                            predictive systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Projects -->
+            <h3 style="font-size: 1.5rem; margin: 4rem 0 1.5rem; color: var(--text);">Research Projects</h3>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-demo">
+                        <iframe src="https://iqbalsofi.github.io/churn-prediction-dashboard/" loading="lazy"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Churn Prediction with Interpretable ML</h3>
+                        <p><strong>Objective:</strong> Investigate the effectiveness of gradient boosting methods for
+                            churn prediction while maintaining model interpretability.</p>
+                        <p><strong>Methodology:</strong></p>
+                        <ul
+                            style="margin: 0.5rem 0 1rem; padding-left: 1.5rem; color: var(--text-muted); font-size: 0.9375rem;">
+                            <li>Built end-to-end ML pipeline using <strong>XGBoost</strong></li>
+                            <li>Engineered RFM (Recency, Frequency, Monetary) and behavioral features</li>
+                            <li>Applied <strong>SHAP</strong> for post-hoc interpretability analysis</li>
+                            <li>Evaluated using AUC-ROC and precision-recall metrics</li>
+                        </ul>
+                        <p><strong>Key Finding:</strong> Feature engineering contributed more to predictive performance
+                            than model complexity, highlighting the importance of domain knowledge in applied ML.</p>
+                        <div class="project-tags">
+                            <span>XGBoost</span>
+                            <span>SHAP</span>
+                            <span>Feature Engineering</span>
+                            <span>Interpretability</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://iqbalsofi.github.io/churn-prediction-dashboard/" target="_blank"
+                                class="btn btn-primary">Demo</a>
+                            <a href="https://github.com/iqbalsofi/churn-prediction-dashboard" target="_blank"
+                                class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-demo">
+                        <iframe src="https://iqbalsofi.github.io/ai-image-classifier/" loading="lazy"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Vision Transformer for Image Classification</h3>
+                        <p><strong>Objective:</strong> Explore the application of Vision Transformers (ViT) to image
+                            classification and understand how attention mechanisms capture spatial relationships.</p>
+                        <p><strong>Methodology:</strong></p>
+                        <ul
+                            style="margin: 0.5rem 0 1rem; padding-left: 1.5rem; color: var(--text-muted); font-size: 0.9375rem;">
+                            <li>Fine-tuned <strong>ViT-B/16</strong> pretrained on ImageNet</li>
+                            <li>Applied data augmentation (random crops, horizontal flips, color jitter)</li>
+                            <li>Analyzed attention maps to understand model focus</li>
+                            <li>Compared performance with CNN-based baselines</li>
+                        </ul>
+                        <p><strong>Key Finding:</strong> ViT attention patterns reveal interpretable focus on object
+                            boundaries and discriminative features, offering insights into model behavior.</p>
+                        <div class="project-tags">
+                            <span>Vision Transformer</span>
+                            <span>PyTorch</span>
+                            <span>Attention Analysis</span>
+                            <span>Transfer Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://iqbalsofi.github.io/ai-image-classifier/" target="_blank"
+                                class="btn btn-primary">Demo</a>
+                            <a href="https://github.com/iqbalsofi/ai-image-classifier" target="_blank"
+                                class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-demo">
+                        <iframe src="https://iqbalsofi.github.io/sentiment-analysis-api/" loading="lazy"></iframe>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sentiment Analysis with Fine-Tuned BERT</h3>
+                        <p><strong>Objective:</strong> Investigate the effectiveness of fine-tuned transformer models
+                            for domain-specific sentiment classification.</p>
+                        <p><strong>Methodology:</strong></p>
+                        <ul
+                            style="margin: 0.5rem 0 1rem; padding-left: 1.5rem; color: var(--text-muted); font-size: 0.9375rem;">
+                            <li>Fine-tuned <strong>BERT-base</strong> for sentiment classification</li>
+                            <li>Implemented efficient inference using <strong>FastAPI</strong></li>
+                            <li>Containerized with <strong>Docker</strong> for reproducibility</li>
+                            <li>Tested inference latency and throughput</li>
+                        </ul>
+                        <p><strong>Key Finding:</strong> Fine-tuning BERT on domain-specific data significantly improved
+                            performance over zero-shot approaches, demonstrating the value of task-specific adaptation.
+                        </p>
+                        <div class="project-tags">
+                            <span>BERT</span>
+                            <span>NLP</span>
+                            <span>Fine-Tuning</span>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://iqbalsofi.github.io/sentiment-analysis-api/" target="_blank"
+                                class="btn btn-primary">Demo</a>
+                            <a href="https://github.com/iqbalsofi/sentiment-analysis-api" target="_blank"
+                                class="btn btn-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Directions -->
+            <div class="research-section" style="margin-top: 4rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text);">Future Research Directions</h3>
+                <p style="color: var(--text-muted); line-height: 1.8; max-width: 800px;">
+                    I am interested in exploring several directions in my PhD research:
+                </p>
+                <ul style="margin: 1rem 0 2rem 1.5rem; color: var(--text-muted); line-height: 2;">
+                    <li><strong>Efficient transformers</strong> for resource-constrained deployment</li>
+                    <li><strong>Multimodal learning</strong> combining text and image understanding</li>
+                    <li><strong>Domain adaptation</strong> for transferring models to new domains with limited labeled
+                        data</li>
+                    <li><strong>Interpretable deep learning</strong> for high-stakes applications</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Iqbal Maqbool Sofi</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

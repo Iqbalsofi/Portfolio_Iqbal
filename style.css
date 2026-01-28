@@ -227,6 +227,43 @@ body {
     color: var(--primary);
 }
 
+/* Research Interests */
+.research-interests {
+    margin: 32px 0;
+    padding: 24px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.research-interests h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest-tags span {
+    background: var(--primary);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.research-section {
+    margin-top: 3rem;
+}
+
 /* =====================================================
    BUTTONS
    ===================================================== */
