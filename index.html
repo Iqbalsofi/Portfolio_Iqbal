@@ -1744,7 +1744,7 @@
             });
         }
 
-        // ✨ GEMINI RESUME MATCHER LOGIC
+        // ✨ GEMINI RESUME MATCHER LOGIC WITH EVENT LOGGING
         function runGeminiMatch() {
             const input = document.getElementById('jobDescInput').value.trim();
             const resultBox = document.getElementById('matcherResult');
@@ -1752,6 +1752,14 @@
             if (!input) {
                 alert("Please paste a Job Description first!");
                 return;
+            }
+
+            // Log event to Google Analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'gemini_job_matcher', {
+                    'event_category': 'Gemini_AI',
+                    'event_label': input.substring(0, 100) // Log first 100 chars of Job Description
+                });
             }
 
             resultBox.style.display = 'block';
@@ -1878,7 +1886,7 @@
             document.getElementById('caseStudyBackdrop').style.display = 'none';
         }
 
-        // Gemini AI Widget Logic
+        // Gemini AI Widget Logic with Event Logging
         function toggleAIChat() {
             const win = document.getElementById('aiChatWindow');
             win.style.display = (win.style.display === 'flex') ? 'none' : 'flex';
@@ -1897,6 +1905,14 @@
             const input = document.getElementById('aiInput');
             const query = input.value.trim();
             if (!query) return;
+
+            // Log AI Chat Query Event to Google Analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'ai_chatbot_query', {
+                    'event_category': 'Gemini_AI',
+                    'event_label': query
+                });
+            }
 
             const chatBody = document.getElementById('aiChatBody');
 
